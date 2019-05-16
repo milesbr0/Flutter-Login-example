@@ -17,13 +17,31 @@ class MyMainPage extends StatefulWidget {
 class _MyMainPageState extends State<MyMainPage> {
   FirebaseAuth _auth = FirebaseAuth.instance;
   bool isLoggedIn = false;
+  FirebaseUser myUser;
 
   Future<FirebaseUser> _loginWithFacebook() async {
     var facebookLogin = new FacebookLogin();
     var result = await facebookLogin.logInWithReadPermissions(['email']);
     debugPrint(result.status.toString());
 
+    final FacebookAccessToken accessToken = result.accessToken;
+    AuthCredential credential = FacebookAuthProvider.getCredential(accessToken: accessToken.token);
+
+    if (result.status == FacebookLoginStatus.loggedIn) {
+      FirebaseUser user = await _auth.signInWithCredential(credential);
+      return user;
+    }
+    return null;
   }
+
+  void _logIn(){
+    _loginWithFacebook().then((response){
+      if(response != null){
+        myUser = response;
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +50,7 @@ class _MyMainPageState extends State<MyMainPage> {
         child: isLoggedIn
             ? null
             : FacebookSignInButton(
-                onPressed: _loginWithFacebook,
+                onPressed: _logIn,
         ),
       ),
     );
