@@ -55,7 +55,7 @@ class _MyMainPageState extends State<MyMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(isLoggedIn ? "Profile Page": "Facebook Login Example"),
+        title: Text(isLoggedIn ? "Profile Page": "Nyeremeny Jatek"),
       actions: <Widget>[
         IconButton(
           icon: Icon(Icons.power_settings_new),
