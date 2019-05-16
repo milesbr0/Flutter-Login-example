@@ -44,13 +44,32 @@ class _MyMainPageState extends State<MyMainPage> {
     });
   }
 
+  void _logOut() async {
+    await _auth.signOut().then((response){
+      isLoggedIn = false;
+      setState(() {});
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Facebook Login Example"),),
+      appBar: AppBar(
+        title: Text(isLoggedIn ? "Profile Page": "Facebook Login Example"),
+      actions: <Widget>[
+        IconButton(
+          icon: Icon(Icons.power_settings_new),
+          onPressed: _logOut,
+        )
+      ],),
       body: Center(
         child: isLoggedIn
-            ? Column( children: <Widget>[],
+            ? Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+              Text('Name: ' + myUser.displayName),
+            Image.network(myUser.photoUrl),
+        ],
 
         )
             : FacebookSignInButton(
