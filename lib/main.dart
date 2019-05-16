@@ -38,6 +38,8 @@ class _MyMainPageState extends State<MyMainPage> {
     _loginWithFacebook().then((response){
       if(response != null){
         myUser = response;
+        isLoggedIn = true;
+        setState(() {});
       }
     });
   }
@@ -48,7 +50,9 @@ class _MyMainPageState extends State<MyMainPage> {
       appBar: AppBar(title: Text("Facebook Login Example"),),
       body: Center(
         child: isLoggedIn
-            ? null
+            ? Column( children: <Widget>[],
+
+        )
             : FacebookSignInButton(
                 onPressed: _logIn,
         ),
