@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "604189769585",
+    "firebase_url": "https://flutternyeremenyjatek.firebaseio.com",
+    "project_id": "flutternyeremenyjatek",
+    "storage_bucket": "flutternyeremenyjatek.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604189769585:android:3f15dea02e927c71",
+        "android_client_info": {
+          "package_name": "com.suit.nyeremenyjatek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604189769585-e4neou2vqq7lm4jm7dgses8o9blnnp3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr-NQgYk4CFMIeQGi3k4wANs8Gh5tihNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604189769585-e4neou2vqq7lm4jm7dgses8o9blnnp3t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
