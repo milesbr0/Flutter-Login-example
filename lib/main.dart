@@ -15,15 +15,24 @@ class MyMainPage extends StatefulWidget {
 }
 
 class _MyMainPageState extends State<MyMainPage> {
-
+  FirebaseAuth _auth = FirebaseAuth.instance;
   bool isLoggedIn = false;
 
+  Future<FirebaseUser> _loginWithFacebook() async {
+    var facebookLogin = new FacebookLogin();
+    var result = await facebookLogin.logInWithReadPermissions(['email']);
+    debugPrint(result.status.toString());
+
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Facebook Login Example"),),
       body: Center(
-        child: isLoggedIn ? null : FacebookSignInButton(onPressed: (){},
+        child: isLoggedIn
+            ? null
+            : FacebookSignInButton(
+                onPressed: _loginWithFacebook,
         ),
       ),
     );
