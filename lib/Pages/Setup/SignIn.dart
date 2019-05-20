@@ -5,6 +5,7 @@ import 'package:flutter_facebook_login/flutter_facebook_login.dart';
 import 'package:flutter_auth_buttons/flutter_auth_buttons.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:nyeremenyjatek/Pages/home.dart';
+import 'package:nyeremenyjatek/login_example_icons.dart';
 
 class SignIn extends StatefulWidget {
   @override
@@ -61,6 +62,13 @@ class _SignInState extends State<SignIn> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
+          Container(
+      decoration: new BoxDecoration(
+        image: new DecorationImage(
+            image: new AssetImage("assets/loginPage/backr_384x640.svg"),
+        fit: BoxFit.cover),
+      ),
+          ),
           Center(
               child: isLoggedIn
                   ? Column(
@@ -69,14 +77,17 @@ class _SignInState extends State<SignIn> {
                   Image.network(currentUser.photoUrl)
                 ], //children: <Widget>[]
               ) //Column
-                  : FacebookSignInButton(
+                  : FlatButton(child: new ButtonBar(alignment: MainAxisAlignment.center,
+              children: [new Text('FACEBOOKKAL CSATLAKOZOM'), new Icon(LoginExample.google_b_hit)]),
                 onPressed: signInWithFacebook,
               )
           ), //Center
-          MaterialButton(
-              child: GoogleSignInButton(
+          FlatButton(child: new ButtonBar(alignment: MainAxisAlignment.center,
+    children: [
+      new Text('GOOGLE-EL CSATLAKOZOM'),
+      new Icon(LoginExample.google_a)]),
             onPressed: signInWithGmail,
-          )), //MaterialButton
+          ), //FlatButton
           Form(
               key: _formKey,
               child: Column(

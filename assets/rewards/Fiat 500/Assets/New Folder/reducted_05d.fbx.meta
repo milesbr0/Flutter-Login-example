@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: 0b0667f2bda7a29448e12da9c2a2c110
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ablak
+    100002: ablaktorlo_ablakkeret
+    100004: alja
+    100006: antenna
+    100008: HDM_02_01_doors_windows002
+    100010: HDM_02_01_siede_windows_back002
+    100012: HDM_02_01_trunk_lid_window002
+    100014: HDM_02_01_windshield002
+    100016: "h\xE1ts\xF3narancsl\xE1pma"
+    100018: karosszeria
+    100020: kipufogo
+    100022: "kr\xF3m_1"
+    100024: logo
+    100026: Polygon_Reduction_1
+    100028: //RootNode
+    100030: rendszam
+    100032: visszapill
+    100034: "\xFCveglappaburak"
+    400000: ablak
+    400002: ablaktorlo_ablakkeret
+    400004: alja
+    400006: antenna
+    400008: HDM_02_01_doors_windows002
+    400010: HDM_02_01_siede_windows_back002
+    400012: HDM_02_01_trunk_lid_window002
+    400014: HDM_02_01_windshield002
+    400016: "h\xE1ts\xF3narancsl\xE1pma"
+    400018: karosszeria
+    400020: kipufogo
+    400022: "kr\xF3m_1"
+    400024: logo
+    400026: Polygon_Reduction_1
+    400028: //RootNode
+    400030: rendszam
+    400032: visszapill
+    400034: "\xFCveglappaburak"
+    2100000: plastic_black
+    2100002: chrome
+    2100004: chrome_stripes
+    2100006: plastic_red
+    2100008: karos
+    2100010: glass_orange
+    2100012: glass
+    2100014: No Name
+    2100016: 21 - Default
+    2100018: speakers_cover
+    2300000: ablaktorlo_ablakkeret
+    2300002: alja
+    2300004: antenna
+    2300006: HDM_02_01_doors_windows002
+    2300008: HDM_02_01_siede_windows_back002
+    2300010: HDM_02_01_trunk_lid_window002
+    2300012: HDM_02_01_windshield002
+    2300014: "h\xE1ts\xF3narancsl\xE1pma"
+    2300016: karosszeria
+    2300018: kipufogo
+    2300020: "kr\xF3m_1"
+    2300022: logo
+    2300024: Polygon_Reduction_1
+    2300026: rendszam
+    2300028: visszapill
+    2300030: "\xFCveglappaburak"
+    3300000: ablaktorlo_ablakkeret
+    3300002: alja
+    3300004: antenna
+    3300006: HDM_02_01_doors_windows002
+    3300008: HDM_02_01_siede_windows_back002
+    3300010: HDM_02_01_trunk_lid_window002
+    3300012: HDM_02_01_windshield002
+    3300014: "h\xE1ts\xF3narancsl\xE1pma"
+    3300016: karosszeria
+    3300018: kipufogo
+    3300020: "kr\xF3m_1"
+    3300022: logo
+    3300024: Polygon_Reduction_1
+    3300026: rendszam
+    3300028: visszapill
+    3300030: "\xFCveglappaburak"
+    4300000: Polygon_Reduction_1
+    4300002: alja
+    4300004: logo
+    4300006: visszapill
+    4300008: "h\xE1ts\xF3narancsl\xE1pma"
+    4300010: "\xFCveglappaburak"
+    4300012: karosszeria
+    4300014: kipufogo
+    4300016: HDM_02_01_windshield002
+    4300018: HDM_02_01_doors_windows002
+    4300020: HDM_02_01_trunk_lid_window002
+    4300022: HDM_02_01_siede_windows_back002
+    4300024: rendszam
+    4300026: antenna
+    4300028: ablaktorlo_ablakkeret
+    4300030: "kr\xF3m_1"
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
