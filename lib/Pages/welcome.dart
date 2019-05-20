@@ -55,17 +55,15 @@ class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Nyeremenyjatek Demo'),
-      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          RaisedButton(
+          new FlatButton(
             onPressed: navigateToSignIn,
             child: Text('Sign in'),
           ),
+
           RaisedButton(
             onPressed: navigateToSignUp,
             child: Text('Sign up'),

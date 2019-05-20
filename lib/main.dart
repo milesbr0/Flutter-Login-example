@@ -1,4 +1,4 @@
-import 'package:nyeremenyjatek/Pages/welcome.dart';
+import 'package:nyeremenyjatek/Pages/Setup/SignIn.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: WelcomePage(),
+      home: SignIn(),
     );
   }
 }
