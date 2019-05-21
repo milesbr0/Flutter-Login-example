@@ -4,6 +4,7 @@ import 'package:flutter_facebook_login/flutter_facebook_login.dart';
 import 'package:flutter_auth_buttons/flutter_auth_buttons.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:nyeremenyjatek/Pages/Setup/SignIn.dart';
+import 'package:nyeremenyjatek/Pages/MainMenu.dart';
 
 class SignUpPage extends StatefulWidget {
   @override
@@ -58,6 +59,10 @@ class _SignUpPageState extends State<SignUpPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          FlatButton(
+            child:Text('MainMenu'),
+            onPressed: navigateToMainMenu,
+          ),
           MaterialButton(
               child: FacebookSignInButton(
             onPressed: _loginWithFacebook,
@@ -149,6 +154,13 @@ class _SignUpPageState extends State<SignUpPage> {
         setState(() {});
       }
     });
+  }
+
+  void navigateToMainMenu(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context) => MainMenuPage(), fullscreenDialog: true));
   }
 
   void signInWithGmail() {
